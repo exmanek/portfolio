@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { name: 'O mnie', href: '#about' },
@@ -10,12 +9,12 @@ const Navbar = () => {
     { name: 'Kontakt', href: '#contact' },
   ];
 
-  const portfolioName = '<exmanek/>';
+  const logo = '<exmanek/>';
 
   return (
     <nav className="navbar">
       <div className="nav__logo-container">
-        <a href="/" className="nav__logo">{portfolioName}</a>
+        <a href="/" className="nav__logo">{logo}</a>
       </div>
       <ul className="nav__items">
         {navItems.map((link, index) => (

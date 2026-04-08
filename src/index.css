@@ -12,10 +12,6 @@
   --main-color: #60cfff;
 
   /* ------------- */
-
-  background-color: var(--bg-color);
-
-  /* ------------- */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1;
   font-weight: 400;
