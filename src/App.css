@@ -113,19 +113,6 @@ nav {
   transform: rotate(-45deg);
 }
 
-/* .navbar--mobile {
-  display: none;
-  z-index: 100;
-}
-
-.nav__items--mobile .nav__items--open {
-  display: flex;
-}
-
-.nav__items--mobile .nav__item {
-  padding: 1em 2em;
-} */
-
 /* HEADER */
 
 .shader-wrapper {
