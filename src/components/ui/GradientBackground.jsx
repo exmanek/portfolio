@@ -3,7 +3,7 @@ import { ShaderGradientCanvas, ShaderGradient } from '@shadergradient/react'
 
 const GradientBackground = () => {
   return (
-    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
+    <div className="shader-wrapper" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
       <ShaderGradientCanvas style={{ position: 'absolute', top: 0 }}>
         <ShaderGradient
           animate="on"
@@ -37,7 +37,7 @@ const GradientBackground = () => {
           rotationY={0}
           rotationZ={-60}
           shader="defaults"
-          type="waterPlane"
+          type="plane"
           uAmplitude={0}
           uDensity={1.5}
           uFrequency={0}

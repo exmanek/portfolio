@@ -9,13 +9,18 @@ const Navbar = () => {
     { name: 'Kontakt', href: '#contact' },
   ];
 
-  const logo = '<exmanek/>';
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <div className="nav__logo-container">
-        <a href="/" className="nav__logo">{logo}</a>
+        <a href="/" className="nav__logo">{'<exmanek/>'}</a>
       </div>
+
+      <a 
+        className={`nav__burger-icon ${isOpen ? 'active' : ''}`} 
+        onClick={() => setIsOpen(prev => !prev)}></a>
+
       <ul className="nav__items">
         {navItems.map((link, index) => (
           <li key={index}>

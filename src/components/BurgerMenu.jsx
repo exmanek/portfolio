@@ -10,21 +10,15 @@ const BurgerMenu = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const BurgerIcon = () => {
-        return (
-            <a 
-            className={`nav__burger-icon ${isOpen ? 'active' : ''}`} 
-            onClick={() => setIsOpen(prev => !prev)}></a>
-        )
-    }
-
     return (
         <nav className="navbar navbar--mobile">
             <div className="nav__logo-container">
                 <a href="/" className="nav__logo">{'<exmanek/>'}</a>
             </div>
 
-            <BurgerIcon />
+            <a 
+            className={`nav__burger-icon ${isOpen ? 'active' : ''}`} 
+            onClick={() => setIsOpen(prev => !prev)}></a>
 
             <ul className={`nav__items nav__items--mobile ${isOpen ? 'nav__items--open' : ''}`}>
                 {navItems.map((link, index) => (

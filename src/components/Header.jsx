@@ -1,4 +1,6 @@
 import GradientBackground from "./ui/GradientBackground";
+import ASCIIText from './ui/ASCIIText';
+
 
 const Header = () => {
     return (
