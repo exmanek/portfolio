@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Navbar = () => {
 
   const navItems = [
-    { name: 'O mnie', href: '#about' },
+    { name: 'O mnie', href: '#aboutme' },
     { name: 'Skills', href: '#skills' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Kontakt', href: '#contact' },
