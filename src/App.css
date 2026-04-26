@@ -38,6 +38,17 @@ nav {
   padding: 1em;
   transition: 0.3s;
   z-index: 100;
+  transition: 0.3s ease-in-out;
+  background-color: var(--bg-color);
+}
+
+.navbar--hidden {
+  transform: translateY(-100%);
+}
+
+.navbar--transparent {
+  background-color: rgba(0,0,0,0);
+  animation-delay: 0.5s;
 }
 
 .nav__logo {

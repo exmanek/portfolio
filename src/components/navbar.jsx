@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { p } from 'motion/react-client';
+import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
 
@@ -10,9 +11,25 @@ const Navbar = () => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [transparent, setTransparent] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 200);
+      setTransparent(currentScrollPos < 400)
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${visible ? '' : 'navbar--hidden'} ${transparent ? 'navbar--transparent' : ''}`}>
       <div className="nav__logo-container">
         <a href="/" className="nav__logo">{'<exmanek/>'}</a>
       </div>
