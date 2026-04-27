@@ -21,6 +21,7 @@ const Navbar = () => {
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 200);
       setTransparent(currentScrollPos < 400)
       setPrevScrollPos(currentScrollPos);
+      setIsOpen(false)
     };
 
     window.addEventListener('scroll', handleScroll);
