@@ -5,26 +5,26 @@ import arrow from '../assets/painted_arrow.png'
 
 
 const AboutMe = () => {
-    const GithubStats = () => {
-        const [data, setData] = useState(null);
-        const [loading, setLoading] = useState(true);
-    }
+    // const GithubStats = () => {
+    //     const [data, setData] = useState(null);
+    //     const [loading, setLoading] = useState(true);
+    // }
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch("https://api.github.com/users/exmanek");
-                const json = await res.json();
-                console.log(json)
-            } catch(err) {
-                console.error("GitHub API error:", err);
-            } finally {
-                setLoading(false);
-            }
-        }
-        fetchData();
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const res = await fetch("https://api.github.com/users/exmanek");
+    //             const json = await res.json();
+    //             console.log(json)
+    //         } catch(err) {
+    //             console.error("GitHub API error:", err);
+    //         } finally {
+    //             setLoading(false);
+    //         }
+    //     }
+    //     fetchData();
 
-    }, []);
+    // }, []);
 
     return (
         <section
@@ -32,7 +32,7 @@ const AboutMe = () => {
         id="aboutme">
             <SplitText
                 text="O mnie"
-                className="aboutme__heading"
+                className="aboutme__heading section-heading"
                 tag="h2"
                 delay={100}
                 duration={1.25}
@@ -53,7 +53,7 @@ const AboutMe = () => {
             
             {/* <p>Moje statystyki</p>
             <img src={arrow} alt="Painted arrow in graffity style" /> */}
-            
+
             {/* do dokonczenia */}
 
         </section>

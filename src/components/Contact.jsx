@@ -3,10 +3,10 @@
 
  const Contact = () => {
     return (
-        <section>
+        <section className="contact">
             <SplitText
                 text="Napisz do mnie"
-                className="skills__heading text-7xl font-bold text-center text-white mb-16"
+                className="contact__heading section-heading text-center mb-16"
                 tag="h2"
                 delay={100}
                 duration={1.25}
@@ -26,19 +26,19 @@
                     <h3 className="contact__tile-heading">Social Media</h3>
 
                     <div className="contact__tile--socials-list">
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="contact__social-card" >
+                            <span className="social-icon"></span>
+                            <span className="social-name">GitHub</span>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer" className="contact__social-card" >
+                            <span className="social-icon"></span>
+                            <span className="social-name">Discord</span>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer" className="contact__social-card" >
                             <span className="social-icon"></span>
                             <span className="social-name"></span>
                         </a>
-                        <a href="">
-                            <span className="social-icon"></span>
-                            <span className="social-name"></span>
-                        </a>
-                        <a href="">
-                            <span className="social-icon"></span>
-                            <span className="social-name"></span>
-                        </a>
-                        <a href="">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="contact__social-card" >
                             <span className="social-icon"></span>
                             <span className="social-name"></span>
                         </a>
@@ -63,9 +63,11 @@
                                 className="contact__form-textarea"
                                 placeholder="Napisz co masz na myśli..."
                                 rows={4}
-                                disabled
                             />
                         </div>
+                        <button className="contact__form-btn">
+                            Wyślij
+                        </button>
                     </div>
                 </div>
             </div>

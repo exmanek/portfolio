@@ -28,7 +28,7 @@ const Skills = () => {
     <section className="skills py-24 px-10 mt-10 flex flex-col items-center" id="skills">
       <SplitText
                 text="Języki których używam"
-                className="skills__heading text-7xl font-bold text-center text-white mb-16"
+                className="skills__heading section-heading font-bold text-center mb-16"
                 tag="h2"
                 delay={100}
                 duration={1.25}
